@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бактерии, нейросети и вкусы будущего</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Основные стили */
+    body {
+      font-family: 'Roboto Mono', monospace;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a1a, #000);
+      color: #00ffcc;
+      padding: 80px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 255, 204, 0.1);
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5em;
+      margin: 0;
+      font-weight: bold;
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+      opacity: 0.9;
+      color: #b3b3b3;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #1a1a1a;
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 255, 204, 0.1);
+    }
+
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.2em;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #00ffcc;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      border-radius: 2px;
+      box-shadow: 0 0 10px #00ffcc;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+      color: #b3b3b3;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 30px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 255, 204, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 30px rgba(0, 255, 204, 0.3);
+    }
+
+    .image-caption {
+      text-align: center;
+      font-style: italic;
+      color: #777;
+      margin-top: -10px;
+      margin-bottom: 30px;
+      font-size: 0.95em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #262626;
+      margin: 10px 0;
+      padding: 15px;
+      border-left: 4px solid #00ffcc;
+      border-radius: 4px;
+      font-size: 1em;
+      color: #e0e0e0;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    ul li:hover {
+      background: #333;
+      transform: translateX(10px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      color: #b3b3b3;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    footer a:hover {
+      opacity: 0.8;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5em;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Бактерии, нейросети и вкусы будущего</h1>
+    <p>Как технологии создают уникальные ароматы</p>
+  </header>
+
+  <div class="container">
+    <h2>Бактерии как фабрики ароматов</h2>
+    <p>Представьте мир, где вы можете заказать вкус "секс на пляже", "свадьба лучшего друга" или даже "вкус победы". Звучит как фантастика? Уже нет. Благодаря синтетической биологии и искусственному интеллекту это становится реальностью. Давайте разберёмся, как бактерии и нейросети меняют наше представление о вкусах.</p>
+    <p>Всё начинается с микроорганизмов. Некоторые бактерии способны синтезировать ароматические соединения — те самые молекулы, которые придают запах и вкус ягодам, фруктам, специям и другим продуктам. Их внутриклеточные механизмы уже достаточно хорошо изучены, и с помощью современных методов молекулярного редактирования, таких как CRISPR-Cas9, их можно "перепрошить" для производства практически любого аромата.</p>
+    <img src="image/bacteria.jpeg" alt="Бактерии в биореакторе">
+    <p class="image-caption">Бактерии в биореакторе, синтезирующие ароматические соединения.</p>
+
+    <h2>Нейросеть как шеф-повар</h2>
+    <p>Но что, если мы хотим не просто базовые вкусы, а что-то уникальное? Здесь на помощь приходит искусственный интеллект. Мы обучаем нейросеть на огромной базе данных вкусовых профилей, чтобы она могла генерировать миксы по заданным параметрам. Например, вы можете запросить что-то "свежее с ягодным вкусом" или "тропическое с ноткой экзотики".</p>
+    <img src="image/machine2.jpeg" alt="Нейросеть, смешивающая вкусы">
+    <p class="image-caption">Нейросеть анализирует сочетания вкусов и создаёт уникальные миксы.</p>
+
+    <h2>Как это работает на практике?</h2>
+    <p>Представьте себе вендинговый автомат, но вместо шоколадок или напитков он выдаёт уникальные ароматизированные продукты. Нейросеть управляет сортировочно-замешивательным механизмом, который комбинирует сиропы с разными вкусами. Затем этот микс смешивается с табачным листом, основой для напитка или десерта — и вуаля! Вы получаете продукт с уникальным вкусом, созданным специально для вас.</p>
+    <img src="image/machine.jpeg" alt="Футуристический вендинговый автомат">
+    <p class="image-caption">Футуристический вендинговый автомат, создающий персонализированные вкусы.</p>
+
+    <h2>Почему это важно?</h2>
+    <ul>
+      <li><strong>Персонализация:</strong> Каждый продукт становится уникальным, как отпечаток пальца.</li>
+      <li><strong>Экологичность:</strong> Бактерии работают в биореакторах, потребляя минимум ресурсов.</li>
+      <li><strong>Безопасность:</strong> Все ароматические соединения проходят строгую проверку.</li>
+    </ul>
+
+    <h2>Что дальше?</h2>
+    <p>Эта технология легко масштабируется: от небольших кафе до крупных производств. В будущем такие системы могут появиться в каждом доме, позволяя создавать уникальные вкусы прямо на кухне.</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Научно-популярный блог. Все права защищены. | <a href="#">Политика конфиденциальности</a></p>
+  </footer>
+
+</body>
+</html>
